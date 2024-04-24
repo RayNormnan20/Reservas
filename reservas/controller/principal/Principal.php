@@ -6,7 +6,9 @@
 
         public function index() {
            
-            $this -> views -> getView('principal', 'index');
+
+            $data['title'] = 'Página Principal';
+            $this -> views -> getView('index', $data);
         }
         
     }
